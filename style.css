@@ -172,15 +172,14 @@
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    height: 100%; /* Ensure all image cards have the same height */
+    max-height: 100%; 
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align content vertically */
+    justify-content: space-between; 
 }
 
 .image-card img {
-    max-width: 100%; /* Ensure image doesn't exceed container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
 }
 
 .image-card p {
@@ -190,10 +189,6 @@
     border-radius: 5px;
     margin-top: 10px;
     flex-grow: 1; /* Allow paragraph to grow and take remaining space */
-}
-
-.image-card.third-image img {
-    max-height: 141px;
 }
 
 .lets-go h1{
@@ -307,6 +302,33 @@ button {
 
 /* TEXT Bb */
 
+.Lorem-quote {
+    background-image: url('background_explore.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lorem {
+    display: flex;
+    align-items: flex-start
+    color: white;
+    font-size: 1.3em;
+    padding: 6em;
+}
+
+.lorem h1 {
+    color: rgb(234, 168, 94);
+}
+
+.quote {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em;
+    padding-top: -10em;
+}
 
 /* TITLE HERE Bb */
 
@@ -316,6 +338,10 @@ button {
     padding: 50px 0;
     text-align: center;
     color: white;
+    height:320px;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .subscribe-content h1 {
