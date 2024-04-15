@@ -8,12 +8,197 @@
 
 /* NAVBAR Jonas */
 
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #333;
+}
+
+.logo img {
+    height: 40px; 
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    color: #aba49f;
+    font-size: 14px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    background-color: #cdc6c2;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.search button img {
+    height: 20px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu .line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+}
+
+.burger-menu.active ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.burger-menu.active ~ .nav-links li {
+    margin: 10px 0;
+}
+
 
 /* HERO-SECTION Jonas */
 
+.hero {
+    background-image: url('itstimeforhiking.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    padding-right: 500px;
+    text-justify: inter-word;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: orange;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align-last: left;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #777777;
+    margin-right: 3vh;
+}
+
+.hero-text button {
+    background-color: white;
+    color: #666666;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px black solid;
+    margin-right: 21vh;
+}
 
 /* LETS GO Jonas */
 
+/* LETS GO Jonas */
+.lets-go {
+    background-image: url('background-image2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.lets-go-content {
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.lets-go-content h1 {
+    color: orange;
+}
+
+.lets-go-content p {
+    color: black;
+}
+
+.image-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-card {
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.image-card p {
+    background-color: #d2b48c;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.lets-go h1{
+    font-size: 42px;
+}
+
+button {
+    background-color: white;
+    color: #666666;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 /* DISCOUNT Thomas */
 
@@ -32,3 +217,67 @@
 
 /* FOOTER Bb */
 
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES: NAVBAR & HERO-SECTION */
+
+@media (max-width: 500px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 5px;
+    }
+
+    .hero-text {
+        padding-right: 5px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px; 
+    }
+
+    .hero-text p {
+        font-size: 14px; 
+        margin-right: 20px; 
+    }
+
+    .hero-text button {
+        margin-right: 80px; 
+    }
+}
+
+@media (min-width: 501px) and (max-width: 850px) {
+    .navbar {
+        padding: 0 20px; /* Adjust as needed */
+    }
+
+    .hero-text {
+        padding-right: 20px; /* Adjust as needed */
+    }
+
+    .hero-text h1 {
+        font-size: 36px; /* Adjust as needed */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Adjust as needed */
+        margin-right: 30px; /* Adjust as needed */
+    }
+
+    .hero-text button {
+        margin-right: 50px; /* Adjust as needed */
+    }
+}
