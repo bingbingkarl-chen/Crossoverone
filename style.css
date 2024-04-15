@@ -50,8 +50,9 @@
     padding: 8px;
     border-radius: 5px;
     border: none;
-    width: 60px;
+    width: 100px;
     background-color: #cdc6c2;
+    margin-right: 5px;
 }
 
 .search button {
@@ -59,6 +60,7 @@
     border: none;
     cursor: pointer;
     padding: 8px;
+    margin-left: -5px;
 }
 
 .search button img {
@@ -120,7 +122,7 @@
 .hero-text p {
     font-size: 18px;
     color: #777777;
-    margin-right: 3vh;
+    margin-right: 16vh;
 }
 
 .hero-text button {
@@ -137,7 +139,6 @@
 
 /* LETS GO Jonas */
 
-/* LETS GO Jonas */
 .lets-go {
     background-image: url('background-image2.jpg');
     background-size: cover;
@@ -171,11 +172,14 @@
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+    max-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .image-card img {
-    width: 100%;
-    border-radius: 5px;
+    max-width: 100%;
 }
 
 .image-card p {
@@ -184,6 +188,7 @@
     padding: 5px;
     border-radius: 5px;
     margin-top: 10px;
+    flex-grow: 1; /* Allow paragraph to grow and take remaining space */
 }
 
 .lets-go h1{
@@ -202,31 +207,189 @@ button {
 
 /* DISCOUNT Thomas */
 
+.discount {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(129, 120, 113);
+    text-align: center;
+    margin-bottom: -5px;
+    
+}
+
+.discount-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em;
+    color: white;
+    font-size: 1.3em;
+    width: 50vw;
+}
+
+.discount-img  img {
+    width: 49.8vw;
+    height: fit-content;
+    object-fit: cover;
+    
+}
+
+.promo {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(228, 183, 132);
+    text-align: center;
+    margin-bottom: -4px;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em;
+    color: white;
+    font-size: 1.3em;
+}
+
+.promo-img  img {
+    width: 49vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+
+    background-color: rgb(234, 168, 94);
+    color: white;
+    padding: 1em 2em;
+    margin: auto;
+    width: 15em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 1em;
+    text-transform: uppercase;
+
+}
 
 /* HIKING IN THE MOUNTAIN Thomas */
 
+.hiking {
+    background-image: url('hikinginthemountains.png');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hiking-content {
+    padding: 15em;
+    font-size: 1.3em;
+
+} 
 
 /* EXPLORE THE WORLD Thomas */
 
+.explore  img {
+    max-width: 100%; 
+    height: auto; 
+}
 
 /* TEXT Bb */
 
+.Lorem-quote {
+    background-image: url('background_explore.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lorem {
+    display: flex;
+    align-items: flex-start
+    color: white;
+    font-size: 1.3em;
+    padding: 6em;
+}
+
+.lorem h1 {
+    color: rgb(234, 168, 94);
+}
+
+.quote {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em;
+    padding-top: -10em;
+}
 
 /* TITLE HERE Bb */
 
+.subscribe-section {
+    background-image: url('subscribe.png');
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    height:320px;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.subscribe-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white; 
+}
+
+.subscribe-content p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px; 
+    margin-bottom: 50px;
+}
 
 /* FOOTER Bb */
 
-/* FOOTER */
-
-/* FOOTER */
-/* FOOTER */
 .footer {
     background-image: url('footer.png');
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 12px;
     padding: 50px 0;
+    margin-top: 40px;
 }
 
 .footer-content {
@@ -301,7 +464,29 @@ button {
     .image-card {
         margin-bottom: 20px;
     }
-    
+
+    .explore  img {
+        max-width: 100%;
+        height: 300px;
+    } 
+
+    .search-container input[type="text"] {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .search-container button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hiking {
+        max-height: 300px;
+    } 
+
+    .hiking-content {
+        font-size: 0.6rem;
+    }
 }
 
 @media (min-width: 501px) and (max-width: 850px) {
