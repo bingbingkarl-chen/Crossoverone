@@ -8,11 +8,65 @@
 </head>
 <body>
     <!-- NAVBAR Jonas-->
-
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button><img src="https://as1.ftcdn.net/v2/jpg/01/27/72/28/1000_F_127722883_DD4Sp3V30YxvYut3sRsaJqv7TKloEuyH.jpg" alt="Search"></button>
+        </div>
+    </nav>
     <!-- HERO-SECTION Jonas -->
-
+    <section class="hero">
+        <div class="hero-text">
+            <h1>IT'S TIME<br> FOR HIKING</h1>
+            <p>EXPERIENCE THE WILDERNESS</p>
+            <button>EXPLORE NOW</button>
+        </div>
+    </section>
     <!-- LETS GO Jonas -->
-
+    <section class="lets-go">
+        <div class="lets-go-content">
+            <h1>LET'S GO</h1>
+            <p>Choose between three phenomenal options, one more daring than the other. <br> Jump head first into your next adventure with our hiking offers</p>
+            <div class="image-cards">
+                <div class="image-card">
+                    <img src="letsgo1.png" alt="Image 1">
+                    <p>
+                        <b>Mount Fuji</b><br>
+                        See Japan from its most challenging side
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="letsgo2.png" alt="Image 2">
+                    <p>
+                        <b>Himalaya</b><br>
+                        The crown jewel of Asia - Transcend all possibilities
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="letsgo3.png" alt="Image 3">
+                    <p>
+                        <b>Mount Everest</b><br>
+                        Conquer the heighest mountain in the world
+                    </p>
+                </div>
+            </div>
+            <button>Explore Now</button>
+        </div>
+    </section>
     <!-- DISCOUNT Thomas -->
 
     <!-- HIKING IN THE MOUNTAIN Thomas -->
@@ -25,5 +79,16 @@
 
     <!-- FOOTER Bb -->
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const navLinks = document.querySelector('.nav-links');
+        
+            burgerMenu.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        });
+        </script>
 </body>
 </html>
