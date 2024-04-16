@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; /* Adjust as needed */
+    margin-top: 20px; 
 }
 
 .burger-menu.active ~ .nav-links li {
@@ -188,7 +188,7 @@
     padding: 5px;
     border-radius: 5px;
     margin-top: 10px;
-    flex-grow: 1; /* Allow paragraph to grow and take remaining space */
+    flex-grow: 1; 
 }
 
 .lets-go h1{
@@ -395,15 +395,15 @@ button {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the start */
-    flex-wrap: wrap; /* Allow items to wrap to next line */
+    align-items: flex-start; 
+    flex-wrap: wrap; 
 }
 
 .footer-item {
-    width: calc(25% - 20px); /* Adjust width as needed */
+    width: calc(25% - 20px); 
     padding: 0 10px;
     text-align: center;
-    margin-bottom: 20px; /* Adjust spacing between items */
+    margin-bottom: 20px;
 }
 
 .footer-item h2 {
@@ -417,8 +417,6 @@ button {
 
 
 /* MEDIA QUERIES */
-
-/* MEDIA QUERIES: NAVBAR & HERO-SECTION */
 
 @media (max-width: 500px) {
     .nav-links {
@@ -491,23 +489,23 @@ button {
 
 @media (min-width: 501px) and (max-width: 850px) {
     .navbar {
-        padding: 0 20px; /* Adjust as needed */
+        padding: 0 20px; 
     }
 
     .hero-text {
-        padding-right: 20px; /* Adjust as needed */
+        padding-right: 20px; 
     }
 
     .hero-text h1 {
-        font-size: 36px; /* Adjust as needed */
+        font-size: 36px; 
     }
 
     .hero-text p {
-        font-size: 16px; /* Adjust as needed */
-        margin-right: 30px; /* Adjust as needed */
+        font-size: 16px; 
+        margin-right: 30px; 
     }
 
     .hero-text button {
-        margin-right: 50px; /* Adjust as needed */
+        margin-right: 50px; 
     }
 }
